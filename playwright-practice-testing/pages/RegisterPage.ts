@@ -63,7 +63,7 @@ export class RegisterPage {
     if (data.countryIndex !== undefined) {
       await this.country.selectOption({ index: data.countryIndex });
     } else {
-      await this.country.selectOption({ index: 1 }); // أول دولة بعد placeholder
+      await this.country.selectOption({ index: 1 }); 
     }
 
     await this.phone.fill(data.phone);

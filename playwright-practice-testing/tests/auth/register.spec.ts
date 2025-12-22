@@ -67,6 +67,8 @@ test.describe('Register Feature', () => {
       password: process.env.REGISTER_PASSWORD!,
     });
 
+    
+
     await register.submit();
 
    await expect(page).toHaveURL(/\/auth\/register/i);
